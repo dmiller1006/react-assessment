@@ -1,0 +1,276 @@
+/* css variables for survey */
+body #survey-element-container {
+  --primary: #207fbe;
+  --primary-light: rgba(26, 183, 250, 0.1);
+  --secondary: #1f69bd;
+  --background: #f6f6f6;
+  --background-dim: #f8f8ff;
+  --background-dim-light: #f8f8ff;
+  --foreground: #555555;
+}
+
+/* header background */
+.sd-container-modern__title {
+  background-color: #f6f6f6 !important;
+  background-image: url('./images//footer_back.jpg') !important;
+  opacity: 90% !important;
+  max-height: 160px;
+}
+
+/* body empty space background color */
+.sd-root-modern {
+  background-color: #f6f6f6 !important;
+}
+
+/* max width main survey */
+.sd-body {
+  margin: 0 auto !important;
+  max-width: 1280px !important;
+}
+
+/* style every other row */
+tbody tr:nth-child(odd) {
+  background-color: #ececec !important;
+}
+/* style every other row */
+tbody tr:nth-child(odd) td {
+  background-color: #ececec !important;
+}
+
+/* override style main survey shadow */
+.svc-logic-question-value, .sd-element--with-frame:not(.sd-element--collapsed) {
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 40%) !important;
+}
+
+/* override color on results page */
+.sv-string-viewer {
+  color: #207fbe;
+}
+
+/* survey container / make room for footer */
+#survey-element-container {
+  padding-bottom: 80px;
+}
+
+/* survey main wrapper */
+.survey-main-container {
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+
+/* override button styling */
+.sd-btn, .sd-navigation__next-btn {
+  font-size: 1em !important;
+  color: #207fbe !important;
+  background-color: #f6f6f6 !important;
+  border: #207fbe 1px solid !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  width: 150px !important;
+}
+
+/* style buttons */
+.sd-navigation__complete-btn {
+  background-color: #207fbe !important;
+  color: #f6f6f6 !important;
+}
+
+/* global google font */
+.App {
+  font-family: 'Inter', sans-serif;
+}
+
+/* style main header text */
+h3 .sv-string-viewer, .sd-header__text h5 .sv-string-viewer {
+  color: #b2b3b4 !important;
+}
+
+/* override survey font with google font */
+.sd-root-modern, .sd-title, .sd-description, .sd-btn {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* footer main css */
+.footer-container {
+  font-size: .7em;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top: 3px solid #207fbe;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* header container main css */
+/* footer main css */
+.header-container {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+/* adjust logo size in header */
+.sd-logo__image {
+  height: 80px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 80px auto;
+    padding-bottom: 100px;
+}
+
+.result-header-container {
+  display: flex;
+  width: 100%;
+  margin: 0 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-header-text {
+  font-size: 1.3em;
+}
+
+.result-image {
+  max-width: 140px;
+  float: right;
+}
+
+.result-page-button {
+  margin: 10px 25px;
+}
+
+.landing-page-container {
+  background-color: #f6f6f6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.landing-card {
+  margin: 7em 10px 0px 10px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 25px;
+}
+
+#cardTitle {
+  font-size: 1.5em;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.result-card {
+  margin: 25px 10px;
+  padding: 10px;
+}
+
+.result-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobile-header-container {
+  display: none;
+}
+
+.mobile-header-text {
+  padding: 25px 5px;
+  font-size: 20px;
+}
+
+.small-mobile-image {
+  height: 50px;
+  padding-right: 10px;
+}
+
+.page-wrapper {
+  padding-top: 150px;
+  padding-bottom: 70px;
+  background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 1277px) {
+  /* pad header on x-large screens */
+  .sd-header__text {
+    padding-left: 250px !important;
+  }
+
+  .sv-logo--right {
+      padding-right: 250px !important;
+  }
+}
+
+/* On screens that are 700px or less, remove large header and replace */
+@media screen and (max-width: 700px) {
+  /* custom classes*/
+  .mobile-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./images//elearning-planner-header-blank.png') !important;
+    opacity: 90% !important;
+    color: #f6f6f6;
+  }
+
+  /* survey classes */
+  .sd-logo {
+    display: none;
+  }
+  .sd-title {
+    display: none;
+  }
+  .sd-container-modern__title {
+    display: none;
+  }
+
+  /* hide icons on smaller screens */
+  .icon-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .landing-card {
+    margin-top: 40px;
+  }
+
+  .result-container {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .result-container {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+}
